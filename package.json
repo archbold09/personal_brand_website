@@ -1,0 +1,14 @@
+{
+  "name": "class_personal_brand",
+  "version": "1.0.0",
+  "description": "class to speak about HTML & CSS",
+  "main": "index.js",
+  "scripts": {
+    "start": "npx tailwindcss build src/assets/css/tailwind.css -o src/assets/css/style.css"
+  },
+  "author": "angelarchbold09",
+  "license": "MIT",
+  "dependencies": {
+    "tailwindcss": "^1.6.2"
+  }
+}

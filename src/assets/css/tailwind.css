@@ -1,0 +1,18 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body{
+    font-family: 'Roboto', sans-serif;
+    background-color: #fafafa;
+}
+
+.button-instagram{
+    background: rgb(255,200,81);
+background: radial-gradient(circle, rgba(255,200,81,1) 4%, rgba(255,95,63,1) 26%, rgba(95,82,198,1) 100%);
+}
+
+.mdi::before {
+    font-size: 30px;
+    line-height: 14px;
+}
