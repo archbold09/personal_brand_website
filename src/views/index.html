@@ -17,17 +17,29 @@
       href="//cdn.materialdesignicons.com/5.4.55/css/materialdesignicons.min.css"
     />
     <link rel="stylesheet" href="../assets/css/style.css" />
+
+    <link rel="stylesheet" href="../assets/css/media.css" />
+
     <title>Leidy Velez - Website</title>
   </head>
   <body>
-    <header class="flex justify-between">
-      <img
-        src="../assets/images/logo_lv.png"
-        alt="logo-page"
-        class="rounded-full w-24 my-3 ml-8 flex items-center justify-center"
-      />
+    
+    <div class="menu-hamburger md:invisible" id="button-hamburger">
+      <button class="button-hamburger">
+        <i class="mdi mdi-menu" ria-hidden="true"></i>
+      </button>
+    </div>
 
-      <nav class="flex flex-row items-center">
+    <header class="flex justify-between header">
+      <figure>
+        <img
+          src="../assets/images/logo_lv.png"
+          alt="logo-page"
+          class="rounded-full w-24 my-3 ml-8 flex items-center justify-center"
+        />
+      </figure>
+
+      <nav class="menu_header flex flex-row items-center">
         <ul class="flex flex-row">
           <li class="flex-1 mx-2">
             <a class="font-semibold text-gray-800" href="#sobreMi">Sobre mi</a>
@@ -45,15 +57,15 @@
     </header>
 
     <main>
-      <section id="sobreMi" class="mt-12 flex justify-center items-center">
-        <div>
+      <section id="sobreMi" class="aboutMe mt-12 flex justify-center items-center">
+        <div class="item_aboutMe">
           <img
             class="rounded-full w-64 flex items-center justify-center"
             src="../assets/images/photo_perfil.png"
             alt="hero-photo"
           />
         </div>
-        <div class="ml-12 w-64">
+        <div class="item_aboutMe md:ml-12 w-64">
           <h2 class="text-4xl font-extrabold tracking-wide text-gray-800">
             Leidy Velez
           </h2>
@@ -73,13 +85,15 @@
             Portafolio
           </h2>
 
-          <div class="flex justify-center">
-            <div class="w-1/4 rounded overflow-hidden shadow-lg mx-2">
-              <img
-                class="w-full h-64 object-cover object-center"
-                src="../assets/images/img_1.jpg"
-                alt="Sunset in the mountains"
-              />
+          <div class="portfolio flex justify-center">
+            <div class="item_portfolio w-1/4 rounded overflow-hidden shadow-lg mx-2">
+              <figure>
+                <img
+                  class="w-full h-64 object-cover object-center"
+                  src="../assets/images/img_1.jpg"
+                  alt="Sunset in the mountains"
+                />
+              </figure>
               <div class="px-6 py-4">
                 <div class="font-bold text-xl mb-2 text-gray-800">
                   The Coldest Sunset
@@ -100,12 +114,14 @@
               </div>
             </div>
 
-            <div class="w-1/4 rounded overflow-hidden shadow-lg mx-2">
-              <img
-                class="w-full h-64 object-cover object-center"
-                src="../assets/images/img_2.jpg"
-                alt="Sunset in the mountains"
-              />
+            <div class="item_portfolio w-1/4 rounded overflow-hidden shadow-lg mx-2">
+              <figure>
+                <img
+                  class="w-full h-64 object-cover object-center"
+                  src="../assets/images/img_2.jpg"
+                  alt="Sunset in the mountains"
+                />
+              </figure>
               <div class="px-6 py-4">
                 <div class="font-bold text-xl mb-2 text-gray-800">
                   The Coldest Sunset
@@ -126,12 +142,14 @@
               </div>
             </div>
 
-            <div class="w-1/4 rounded overflow-hidden shadow-lg mx-2">
-              <img
-                class="w-full h-64 object-cover object-center"
-                src="../assets/images/img_3.jpg"
-                alt="Sunset in the mountains"
-              />
+            <div class="item_portfolio w-1/4 rounded overflow-hidden shadow-lg mx-2">
+              <figure>
+                <img
+                  class="w-full h-64 object-cover object-center"
+                  src="../assets/images/img_3.jpg"
+                  alt="Sunset in the mountains"
+                />
+              </figure>
               <div class="px-6 py-4">
                 <div class="font-bold text-xl mb-2 text-gray-800">
                   The Coldest Sunset
@@ -167,22 +185,22 @@
         <h2 class="text-center text-4xl font-semibold text-gray-100">
           Patrocinadores
         </h2>
-        <div class="container mx-auto flex justify-evenly items-center py-6">
-          <div class="border-solid border-2 rounded-lg mx-1 bg-white">
+        <div class="partner container mx-auto flex justify-evenly items-center py-6">
+          <div class="item_partner border-solid border-2 rounded-lg mx-1 bg-white">
             <img
               src="../assets/images/partner_1.png"
               class="object-cover w-48 mx-0 pt-0"
               alt="partner_logo"
             />
           </div>
-          <div class="border-solid border-2 rounded-lg mx-1 bg-white">
+          <div class="item_partner border-solid border-2 rounded-lg mx-1 bg-white">
             <img
               src="../assets/images/partner_2.png"
               class="object-cover w-48 mx-0 pt-0"
               alt="partner_logo"
             />
           </div>
-          <div class="border-solid border-2 rounded-lg mx-1 bg-white">
+          <div class="item_partner border-solid border-2 rounded-lg mx-1 bg-white">
             <img
               src="../assets/images/partner_3.png"
               class="object-cover w-48 mx-0 pt-0"
@@ -193,15 +211,15 @@
       </section>
     </main>
 
-    <footer id="contacto" class="bg-gray-900 mt-5 rounded-top">
-      <div class="flex justify-center items-center pt-6">
+    <footer id="contacto" class="footer bg-gray-900 mt-5 rounded-top">
+      <div class="item_footer flex justify-center items-center py-2">
         <ul class="flex">
-          <li class="mx-6">
+          <li class="mx-3 pt-2">
             <a href="#">
               <i class="mdi mdi-facebook text-white" aria-hidden="true"></i>
             </a>
           </li>
-          <li class="mx-6">
+          <li class="mx-3 pt-2">
             <a href="#">
               <i class="mdi mdi-instagram text-white" aria-hidden="true"></i>
             </a>
@@ -209,11 +227,27 @@
         </ul>
       </div>
 
-      <div class="flex justify-start items-center pb-1">
-        <p class="font-bold text-gray-100 ml-8">
+      <div class="item_footer flex justify-center items-center py-1">
+        <p class="font-bold text-gray-100">
           Developed & Design by Angel Archbold - 2020
         </p>
       </div>
     </footer>
+
+    <script>
+      let buttonHamburger = document.getElementById('button-hamburger')
+      let menuHeader = document.querySelector('.menu_header')
+      buttonHamburger.addEventListener('click',hideShow);
+      
+      function hideShow(){
+        if(menuHeader.classList.contains('is-active')){
+          menuHeader.classList.remove('is-active')
+        }else{
+          menuHeader.classList.add('is-active')
+        }
+      }
+
+    </script>
+
   </body>
 </html>

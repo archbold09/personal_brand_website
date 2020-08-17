@@ -1,0 +1,127 @@
+.menu-hamburger {
+  display: block;
+  position: fixed;
+  margin: 15px;
+}
+.button-hamburger {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 4;
+  color: #fafafa;
+}
+
+@media screen and (max-width: 767px) {
+  /*header section*/
+  .header {
+    display: block;
+    height: auto;
+  }
+
+  .header figure {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    margin: 0px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+  }
+
+  .header figure img {
+    padding: 0px;
+    margin: 0px;
+  }
+
+  .header ul {
+    display: block;
+  }
+
+  .header ul li {
+    height: 50px;
+    padding: 0px;
+    margin: 0px;
+  }
+
+  .header nav {
+    justify-content: center;
+    align-items: center;
+  }
+
+  .menu_header {
+    background-color: rgba(0, 0, 0, 0.2);
+    width: 100%;
+    visibility: hidden;
+    transition: 0.3s;
+  }
+
+  .menu_header.is-active {
+    visibility: visible;
+    transition: 0.3s;
+  }
+
+  .menu_header a {
+    text-decoration: underline;
+    color: #fafafa;
+  }
+
+  /*main about me*/
+  .aboutMe {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .aboutMe .item_aboutMe {
+    padding: 10px 0;
+    text-align: center;
+  }
+
+  /*main portfolio*/
+  .portfolio {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .item_portfolio {
+    width: 60%;
+    margin: 10px 0;
+  }
+
+  .item_portfolio img {
+    object-position: 25% 25%;
+  }
+
+  /*main partner*/
+  .partner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .partner .item_partner {
+    margin: 5px 0;
+  }
+
+  .partner .item_partner img {
+    object-position: 50% 50%;
+  }
+
+  /*footer*/
+  .footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 0;
+  }
+
+  .item_footer {
+    text-align: center;
+    margin: 0;
+    padding: 10px 10px;
+  }
+}
